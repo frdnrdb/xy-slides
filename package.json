@@ -5,7 +5,7 @@
   "main": ".src/index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --env.serve --config webpack.config.js",
-    "build": "webpack --env.prod -p --config webpack.config.js"
+    "build": "webpack --env.prod -p --config webpack.config.js && mkdir docs && mv dist/index.html docs/index.html && mv dist/script.min.js docs/script.min.js"
   },
   "browserslist": [
     "> 1%",
